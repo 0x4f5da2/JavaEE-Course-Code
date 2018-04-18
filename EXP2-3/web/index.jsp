@@ -30,5 +30,9 @@
           <input type="submit" value="登陆"/>
           <input type="reset" value="重置"/>
       </form>
+  <br>
+  <%
+      out.println(request.getParameter("status"));
+  %>
   </body>
 </html>

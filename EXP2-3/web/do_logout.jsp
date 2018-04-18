@@ -11,6 +11,9 @@
     <title>Title</title>
 </head>
 <body>
-
+<%
+    session.removeAttribute("username");
+%>
+<jsp:forward page="index.jsp"/>
 </body>
 </html>
