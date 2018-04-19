@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 
 public class DatabaseBean {
     private Connection connection = null;
-    private String url = "jdbc:mysql://localhost:3306/javaee?" +
+    private String url = "jdbc:mysql://localhost:3306/javaee_exp2_3?" +
             "user=root&password=12345678&useUnicode=true&characterEncoding=UTF8&useSSL=true";
 
     public DatabaseBean() throws Exception {
@@ -16,16 +16,24 @@ public class DatabaseBean {
         connection = DriverManager.getConnection(url);
     }
 
-    public boolean verify (String username, String password) throws Exception {
+    public String verify (String username, String password) throws Exception {
         boolean verified = false;
+        String uid = null;
         String sql = "select * from username where username=? and password=?";
         PreparedStatement stmt = connection.prepareStatement(sql);
         stmt.setString(1, username);
         stmt.setString(2, password);
         ResultSet resultSet = stmt.executeQuery();
-        if(resultSet.next()){verified = true;}
+        if(resultSet.next()){
+            verified = true;
+            uid = resultSet.getString("id");
+        }
         stmt.close();
-        return verified;
+        if(verified){
+            return uid;
+        } else {
+            return null;
+        }
     }
 
     public boolean addUser(String username, String password) throws Exception{
@@ -105,5 +113,23 @@ public class DatabaseBean {
         if (connection != null) {
             connection.close();
         }
+    }
+
+    public ResultSet getOneWeekHistory(String uid) throws Exception{
+        ResultSet resultSet = null;
+        String sql = "select * from shop_record, product where shop_record.productid=product.id and datediff(now(), shop_record.shopdate) < 7 and shop_record.userid=?";
+        PreparedStatement stmt = connection.prepareStatement(sql);
+        stmt.setString(1, uid);
+        resultSet = stmt.executeQuery();
+        return resultSet;
+    }
+
+    public ResultSet getClassfiedHistory(String uid) throws Exception{
+        ResultSet resultSet = null;
+        String sql = "select productid, productname, productsource, productcode, sum(number) as num from shop_record, product where shop_record.productid=product.id and userid=? group by productid;";
+        PreparedStatement stmt = connection.prepareStatement(sql);
+        stmt.setInt(1, Integer.parseInt(uid));
+        resultSet = stmt.executeQuery();
+        return resultSet;
     }
 }

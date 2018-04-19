@@ -15,7 +15,7 @@
 
 
 <hr>
-<form action="" method="post">
+<form action="do_add_product.jsp" method="post">
     <table>
         <caption>增加商品</caption>
         <tr>

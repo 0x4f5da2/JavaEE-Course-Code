@@ -9,18 +9,19 @@
 <jsp:useBean id="database" scope="application" class="com.chenzhicheng.course.javaee.exp2_3.DatabaseBean"/>
 <html>
 <head>
-    <title>Title</title>
+    <title>processing</title>
 </head>
 <body>
 <%
     request.setCharacterEncoding("UTF-8");
     String username = request.getParameter("username");
     String password = request.getParameter("password");
-    boolean verified = database.verify(username, password);
-    if (verified) {
+    String uid = database.verify(username, password);
+    if (uid != null) {
         session.setAttribute("username", username);
+        session.setAttribute("userid", uid);
 %>
-        <jsp:forward page="shop.jsp"/>
+        <jsp:forward page="products.jsp"/>
 <%
     } else {
 %>

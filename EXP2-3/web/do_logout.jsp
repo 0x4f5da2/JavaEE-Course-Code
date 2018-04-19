@@ -13,6 +13,7 @@
 <body>
 <%
     session.removeAttribute("username");
+    session.removeAttribute("userid");
 %>
 <jsp:forward page="index.jsp"/>
 </body>

@@ -5,12 +5,19 @@
   Time: 22:17
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" errorPage="error.jsp" %>
+<jsp:useBean id="database" scope="application" class="com.chenzhicheng.course.javaee.exp2_3.DatabaseBean"/>
 <html>
 <head>
-    <title>Title</title>
+    <title>processing</title>
 </head>
 <body>
-
+<%
+    String productcode = request.getParameter("productcode");
+    String productname = request.getParameter("productname");
+    String productsource = request.getParameter("productsource");
+    database.addProduct(productcode, productname, productsource);
+%>
+<jsp:forward page="products.jsp"/>
 </body>
 </html>
