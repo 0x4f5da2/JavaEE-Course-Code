@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" errorPage="error.jsp" %>
 <jsp:useBean id="database" scope="application" class="com.chenzhicheng.course.javaee.exp2_3.DatabaseBean"/>
+<%@ include file="session.jsp"%>
 <html>
 <head>
     <title>processing</title>

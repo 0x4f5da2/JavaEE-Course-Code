@@ -6,6 +6,13 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    if(session.getAttribute("username")!=null && session.getAttribute("userid")!=null) {
+%>
+        <jsp:forward page="products.jsp"/>
+<%
+    }
+%>
 <html>
   <head>
     <title>登陆</title>
@@ -32,7 +39,8 @@
       </form>
   <br>
   <%
-      out.println(request.getParameter("status"));
+      if(request.getParameter("status") != null)
+          out.println(request.getParameter("status"));
   %>
   </body>
 </html>

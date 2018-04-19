@@ -7,11 +7,13 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" errorPage="error.jsp" %>
 <jsp:useBean id="database" scope="application" class="com.chenzhicheng.course.javaee.exp2_3.DatabaseBean"/>
+<%@ include file="session.jsp"%>
 <html>
 <head>
     <title>购物历史</title>
 </head>
 <body>
+<a href="products.jsp">产品页面</a>&nbsp;||&nbsp;<a href="user.jsp">用户管理页面</a>&nbsp;||&nbsp;<a href="history.jsp">购物历史</a>
 <hr>
 <table>
     <caption>历史购物总数</caption>
@@ -37,7 +39,6 @@
     %>
 </table>
 <hr>
-<
 <table>
     <caption>最近一周购物历史</caption>
     <tr>

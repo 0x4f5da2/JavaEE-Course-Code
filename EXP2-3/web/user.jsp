@@ -7,13 +7,14 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" errorPage="error.jsp" %>
 <jsp:useBean id="database" scope="application" class="com.chenzhicheng.course.javaee.exp2_3.DatabaseBean"/>
-
+<%@ include file="session.jsp"%>
 <html>
 <head>
     <title>用户操作页面</title>
 </head>
 <body>
 
+<a href="products.jsp">产品页面</a>&nbsp;||&nbsp;<a href="user.jsp">用户管理页面</a>&nbsp;||&nbsp;<a href="history.jsp">购物历史</a>
 <hr>
 
 <form action="do_add_user.jsp" method="post">
@@ -29,7 +30,7 @@
         </tr>
         <tr>
             <td><input type="submit" value="提交"></td>
-            <td><<input type="reset" value="重置"></td>
+            <td><input type="reset" value="重置"></td>
         </tr>
     </table>
 </form>
@@ -50,7 +51,7 @@
     <tr>
         <td><%=resultSet.getString("username")%></td>
         <td><%=resultSet.getString("password")%></td>
-        <td><<a href="do_del_user.jsp?uid=<%=resultSet.getString("id")%>"></a></td>
+        <td><a href="do_del_user.jsp?uid=<%=resultSet.getString("id")%>">删除用户</a></td>
     </tr>
     <%
         }

@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" import="java.sql.ResultSet" errorPage="error.jsp" %>
 <jsp:useBean id="database" scope="application" class="com.chenzhicheng.course.javaee.exp2_3.DatabaseBean"/>
+<%@ include file="session.jsp"%>
 <html>
 <head>
     <title>商品操作页面</title>
@@ -14,6 +15,7 @@
 <body>
 
 
+<a href="products.jsp">产品页面</a>&nbsp;||&nbsp;<a href="user.jsp">用户管理页面</a>&nbsp;||&nbsp;<a href="history.jsp">购物历史</a>
 <hr>
 <form action="do_add_product.jsp" method="post">
     <table>
@@ -28,7 +30,7 @@
         </tr>
         <tr>
             <td>物品来源</td>
-            <input type="text" name="productsource"/>
+            <td><input type="text" name="productsource"/></td>
         </tr>
         <tr>
             <td>

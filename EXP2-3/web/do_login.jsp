@@ -17,7 +17,7 @@
     String username = request.getParameter("username");
     String password = request.getParameter("password");
     String uid = database.verify(username, password);
-    if (uid != null) {
+    if (uid != null && Integer.parseInt(uid) > 0) {
         session.setAttribute("username", username);
         session.setAttribute("userid", uid);
 %>

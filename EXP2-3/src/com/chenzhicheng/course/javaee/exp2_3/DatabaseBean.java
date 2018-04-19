@@ -5,6 +5,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class DatabaseBean {
     private Connection connection = null;
@@ -19,7 +21,7 @@ public class DatabaseBean {
     public String verify (String username, String password) throws Exception {
         boolean verified = false;
         String uid = null;
-        String sql = "select * from username where username=? and password=?";
+        String sql = "select * from user where username=? and password=?";
         PreparedStatement stmt = connection.prepareStatement(sql);
         stmt.setString(1, username);
         stmt.setString(2, password);
@@ -80,14 +82,16 @@ public class DatabaseBean {
         return success;
     }
 
-    boolean addShopRecord(String uid, String pid, String num, String date) throws Exception {
+    public boolean addShopRecord(String uid, String pid, String num) throws Exception {
         boolean success = false;
-        String sql = "insert into shop_record(userid, productid, numbers, shopdate) values(?, ?, ?, ?)";
+        String sql = "insert into shop_record(userid, productid, number, shopdate) values(?, ?, ?, ?)";
         PreparedStatement stmt = connection.prepareStatement(sql);
         stmt.setString(1, uid);
         stmt.setString(2, pid);
         stmt.setString(3, num);
-        stmt.setString(4, date);
+        Date date = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        stmt.setString(4, simpleDateFormat.format(date));
         success = stmt.executeUpdate()!=0;
         stmt.close();
         return success;
@@ -95,7 +99,7 @@ public class DatabaseBean {
 
     public ResultSet getProducts() throws Exception{
         ResultSet resultSet;
-        String sql = "select * from products;";
+        String sql = "select * from product;";
         PreparedStatement stmt = connection.prepareStatement(sql);
         resultSet = stmt.executeQuery();
         return resultSet;
