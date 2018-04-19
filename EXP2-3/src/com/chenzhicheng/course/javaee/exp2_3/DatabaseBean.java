@@ -85,6 +85,22 @@ public class DatabaseBean {
         return success;
     }
 
+    public ResultSet getProducts() throws Exception{
+        ResultSet resultSet;
+        String sql = "select * from products;";
+        PreparedStatement stmt = connection.prepareStatement(sql);
+        resultSet = stmt.executeQuery();
+        return resultSet;
+    }
+
+    public ResultSet getUsers() throws Exception {
+        ResultSet resultSet;
+        String sql = "select * from user";
+        PreparedStatement stmt = connection.prepareStatement(sql);
+        resultSet = stmt.executeQuery();
+        return resultSet;
+    }
+
     public void close() throws Exception {
         if (connection != null) {
             connection.close();
