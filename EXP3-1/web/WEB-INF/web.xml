@@ -22,6 +22,24 @@
     </servlet-mapping>
     
     <servlet>
+        <servlet-name>user</servlet-name>
+        <servlet-class>com.chenzhicheng.course.javaee.exp3_1.servlet.UserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>user</servlet-name>
+        <url-pattern>/user</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>com.chenzhicheng.course.javaee.exp3_1.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
         <servlet-name>add_product</servlet-name>
         <servlet-class>com.chenzhicheng.course.javaee.exp3_1.servlet.AddProductServlet</servlet-class>
     </servlet>
@@ -38,7 +56,24 @@
         <servlet-name>add_user</servlet-name>
         <url-pattern>/add_user</url-pattern>
     </servlet-mapping>
-
+    
+    <servlet>
+        <servlet-name>del_product</servlet-name>
+        <servlet-class>com.chenzhicheng.course.javaee.exp3_1.servlet.DelProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>del_product</servlet-name>
+        <url-pattern>/del_product</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>del_user</servlet-name>
+        <servlet-class>com.chenzhicheng.course.javaee.exp3_1.servlet.DelUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>del_user</servlet-name>
+        <url-pattern>/del_user</url-pattern>
+    </servlet-mapping>
 
 
 
