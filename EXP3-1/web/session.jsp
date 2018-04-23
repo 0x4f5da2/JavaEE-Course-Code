@@ -8,7 +8,7 @@
 <%
     if(session.getAttribute("username")==null || session.getAttribute("userid")==null){
 %>
-        <jsp:forward page="/logout"/>
+        <jsp:forward page="logout"/>
 <%
     }
 %>

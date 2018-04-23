@@ -11,7 +11,7 @@
     <title>登陆</title>
 </head>
 <body>
-<form action="do_login.jsp">
+<form action="login" method="post">
     <table>
         <caption>用户登录</caption>
         <tr>

@@ -15,10 +15,11 @@
 </head>
 <body>
 
-<a href="./products">产品页面</a>&nbsp;||&nbsp;<a href="/user.jsp">用户管理页面</a>&nbsp;||&nbsp;<a href="history.jsp">购物历史</a>
+<a href="products">产品页面</a>&nbsp;||&nbsp;<a href="user">用户管理页面</a>&nbsp;||&nbsp;
+<a href="history">购物历史</a>&nbsp;||&nbsp;<a href="logout">退出</a>
 <hr>
 
-<form action="do_add_user.jsp" method="post">
+<form action="add_user" method="post">
     <table>
         <caption>增加用户</caption>
         <tr>
@@ -52,7 +53,7 @@
     <tr>
         <td><%=userBean.getUsername()%></td>
         <td><%=userBean.getPassword()%></td>
-        <td><a href="do_del_user.jsp?uid=<%=userBean.getUserid()%>">删除用户</a></td>
+        <td><a href="del_user?uid=<%=userBean.getUserid()%>">删除用户</a></td>
     </tr>
     <%
         }

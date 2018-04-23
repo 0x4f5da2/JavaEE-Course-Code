@@ -20,7 +20,7 @@ public class ProductsServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        if(SessionControl.isInvalid(req.getSession())){
+        if(SessionControl.isNotInvalid(req.getSession())){
             resp.sendRedirect("./logout");
             return;
         }

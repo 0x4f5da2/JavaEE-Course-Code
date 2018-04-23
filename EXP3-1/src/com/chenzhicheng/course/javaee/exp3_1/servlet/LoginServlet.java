@@ -20,8 +20,9 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
         req.setCharacterEncoding("UTF-8");
-        if(SessionControl.isInvalid(session)){
-            resp.sendRedirect("./products");
+//
+        if(((String)session.getAttribute("userid")) != null){
+            resp.sendRedirect("/products");
             return;
         }
         String username = req.getParameter("username");
@@ -43,7 +44,7 @@ public class LoginServlet extends HttpServlet {
             session.setAttribute("userid", uid);
             resp.sendRedirect("./products");
         } else {
-            resp.sendRedirect("./login_page?");
+            resp.sendRedirect("./login.jsp");
         }
     }
 }

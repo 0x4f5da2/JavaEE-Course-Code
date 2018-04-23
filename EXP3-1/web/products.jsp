@@ -8,6 +8,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@include file="session.jsp"%>
 <html>
 <head>
     <title>商品操作页面</title>
@@ -15,9 +16,10 @@
 <body>
 
 
-<a href="products.jsp">产品页面</a>&nbsp;||&nbsp;<a href="user.jsp">用户管理页面</a>&nbsp;||&nbsp;<a href="history.jsp">购物历史</a>
+<a href="products">产品页面</a>&nbsp;||&nbsp;<a href="user">用户管理页面</a>&nbsp;||&nbsp;
+<a href="history">购物历史</a>&nbsp;||&nbsp;<a href="logout">退出</a>
 <hr>
-<form action="do_add_product.jsp" method="post">
+<form action="add_product" method="post">
     <table>
         <caption>增加商品</caption>
         <tr>
@@ -63,8 +65,8 @@
         <td><%=productBean.getProductsource()%>
         </td>
         <td>
-            <a href="do_buy.jsp?pid=<%=productBean.getProductid()%>">加入购物车</a>/
-            <a href="do_del_product.jsp?pid=<%=productBean.getProductid()%>">删除该物品</a>
+            <a href="do_buy?pid=<%=productBean.getProductid()%>">加入购物车</a>/
+            <a href="del_product?pid=<%=productBean.getProductid()%>">删除该物品</a>
         </td>
     </tr>
     <%
