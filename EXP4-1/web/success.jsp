@@ -12,5 +12,24 @@
 </head>
 <body>
 <p style="color: green">SUCCESS</p>
+<br>
+<table>
+    <tr>
+        <td>
+            logged_in:
+        </td>
+        <td>
+            <%=session.getAttribute("logged_in").toString()%>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            from:
+        </td>
+        <td>
+            <%=session.getAttribute("from").toString()%>
+        </td>
+    </tr>
+</table>
 </body>
 </html>
