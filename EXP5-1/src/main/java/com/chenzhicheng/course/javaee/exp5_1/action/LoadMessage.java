@@ -2,6 +2,7 @@ package com.chenzhicheng.course.javaee.exp5_1.action;
 
 import com.chenzhicheng.course.javaee.exp5_1.database.Database;
 import com.chenzhicheng.course.javaee.exp5_1.model.User;
+import com.chenzhicheng.course.javaee.exp5_1.util.CheckLoginState;
 import com.chenzhicheng.course.javaee.exp5_1.util.StringSupport;
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionContext;
@@ -30,6 +31,9 @@ public class LoadMessage extends ActionSupport implements SessionAware {
      */
     @Override
     public String execute() throws Exception {
+        if(!CheckLoginState.check(session)){
+            return ActionSupport.LOGIN;
+        }
         User user = (User) this.session.get(StringSupport.SESSION_USER_BEAN);
         if(user == null) {
             return ActionSupport.LOGIN;

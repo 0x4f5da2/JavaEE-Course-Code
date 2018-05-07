@@ -1,8 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="com.chenzhicheng.course.javaee.exp5_1.model.LyTable" %>
-<%@page import="com.chenzhicheng.course.javaee.exp5_1.util.StringSupport" %>
+<%@ page import="com.chenzhicheng.course.javaee.exp5_1.util.StringSupport" %>
 <%@ page import="java.util.ArrayList" %>
-<%@page import="java.util.Iterator" %>
+<%@ page import="java.util.Iterator" %>
+<%@ include file="session.jsp" %>
 <html>
 <head>
     <title>留言板信息</title>

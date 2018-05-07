@@ -3,6 +3,7 @@ package com.chenzhicheng.course.javaee.exp5_1.action;
 import com.chenzhicheng.course.javaee.exp5_1.database.Database;
 import com.chenzhicheng.course.javaee.exp5_1.model.NewComment;
 import com.chenzhicheng.course.javaee.exp5_1.model.User;
+import com.chenzhicheng.course.javaee.exp5_1.util.CheckLoginState;
 import com.chenzhicheng.course.javaee.exp5_1.util.StringSupport;
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionSupport;
@@ -34,7 +35,9 @@ public class AddAction extends ActionSupport implements ModelDriven<NewComment>,
      */
     @Override
     public String execute() throws Exception {
-        //todo
+        if(!CheckLoginState.check(session)){
+            return ActionSupport.LOGIN;
+        }
         boolean status = false;
         Database database = new Database();
         status = database.addComment(

@@ -1,4 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<%@include file="session.jsp"%>
+
 <html>
 <head>
     	<title>留言板</title>

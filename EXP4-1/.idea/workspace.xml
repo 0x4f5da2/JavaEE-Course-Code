@@ -7,45 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="290728db-2f16-4e69-9ba3-71fa14a882a3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/.idea/modules/EXP5-1_main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/java/com/chenzhicheng/course/javaee/exp5_1/action/AddAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/java/com/chenzhicheng/course/javaee/exp5_1/action/LoadMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/java/com/chenzhicheng/course/javaee/exp5_1/action/LoginAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/java/com/chenzhicheng/course/javaee/exp5_1/action/RegisterAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/java/com/chenzhicheng/course/javaee/exp5_1/database/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/java/com/chenzhicheng/course/javaee/exp5_1/model/LyTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/java/com/chenzhicheng/course/javaee/exp5_1/model/NewComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/java/com/chenzhicheng/course/javaee/exp5_1/model/NewRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/java/com/chenzhicheng/course/javaee/exp5_1/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/java/com/chenzhicheng/course/javaee/exp5_1/util/StringSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/resources/struts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/webapp/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/webapp/liuyan.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/webapp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/webapp/main.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/webapp/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/webapp/success.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/webapp/t.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXP5-1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EXP5-1/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -209,8 +171,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="701" />
-    <option name="width" value="1226" />
+    <option name="x" value="863" />
+    <option name="y" value="37" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -414,7 +377,7 @@
       <workItem from="1524754356300" duration="4948000" />
       <workItem from="1524791930289" duration="3092000" />
       <workItem from="1525322881553" duration="2424000" />
-      <workItem from="1525343018097" duration="6480000" />
+      <workItem from="1525343018097" duration="6482000" />
     </task>
     <task id="LOCAL-00001" summary="20160426">
       <created>1524728789882</created>
@@ -441,11 +404,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25364000" />
+    <option name="totallyTimeSpent" value="25366000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="701" y="0" width="1226" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="863" y="37" width="974" height="1047" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005208" side_tool="true" weight="0.32021275" />
@@ -467,7 +429,7 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4996145" weight="0.3642312" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49947917" weight="0.32978722" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.73549485" visible="true" weight="0.16295026" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.73549485" visible="true" weight="0.20787746" />
       <window_info id="Web" order="2" sideWeight="0.26450512" side_tool="true" weight="0.17857143" />
       <window_info id="Learn" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
