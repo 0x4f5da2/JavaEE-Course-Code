@@ -7,17 +7,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="917e260d-537d-41f0-953c-bc088b358af0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EXP3-1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EXP3-1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/EXP5-1_main.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/.idea/modules/EXP6-1_main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/action/AddAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/action/LoadMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/action/LoginAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/action/RegisterAction-validation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/action/RegisterAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/database/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/model/LyTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/model/NewComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/model/NewRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/util/CheckLoginState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/util/StringSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/resources/struts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/webapp/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/webapp/liuyan.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/webapp/logout.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/webapp/main.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/webapp/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/webapp/session.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/webapp/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/webapp/t.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXP6-1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EXP6-1/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXP6-1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EXP6-1/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -593,7 +609,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="1075" />
     <option name="width" value="852" />
     <option name="height" value="1047" />
@@ -639,6 +655,34 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="exp5_1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EXP5-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EXP5-1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EXP5-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EXP5-1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EXP5-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EXP5-1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EXP5-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EXP5-1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -879,7 +923,7 @@
       <workItem from="1525927187535" duration="225000" />
       <workItem from="1525928425994" duration="1354000" />
       <workItem from="1525935368052" duration="1404000" />
-      <workItem from="1525936872232" duration="1307000" />
+      <workItem from="1525936872232" duration="2978000" />
     </task>
     <task id="LOCAL-00001" summary="基本完工，还有一些小问题待处理">
       <created>1525625009330</created>
@@ -899,10 +943,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31014000" />
+    <option name="totallyTimeSpent" value="32685000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1075" y="0" width="852" height="1047" extended-state="0" />
+    <frame x="1075" y="0" width="852" height="1047" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50159913" side_tool="true" weight="0.5561614" />
@@ -925,7 +970,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" weight="0.5561614" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.33964646" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5568182" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Learn" order="2" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.6597374" />
