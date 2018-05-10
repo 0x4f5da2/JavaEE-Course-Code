@@ -10,6 +10,11 @@
       <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/java/com/chenzhicheng/course/javaee/exp5_1/util/CheckLoginState.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/webapp/logout.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../EXP5-1/src/main/webapp/session.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/第1次上机内容（2018-3-29）.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/第2次上机内容（2018-4-12）.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/第3次上机内容（2018-4-19）.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/第4次上机内容（2018-4-26）.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework/第5次上机内容（2018-5-3）.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EXP4-1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EXP4-1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EXP5-1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EXP5-1/.idea/workspace.xml" afterDir="false" />
@@ -198,7 +203,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -432,7 +437,7 @@
       <workItem from="1524456990794" duration="8435000" />
       <workItem from="1524465887303" duration="5458000" />
       <workItem from="1524723611273" duration="29000" />
-      <workItem from="1525681182345" duration="1155000" />
+      <workItem from="1525681182345" duration="1521000" />
     </task>
     <task id="LOCAL-00001" summary="20180423">
       <created>1524465807464</created>
@@ -473,10 +478,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15077000" />
+    <option name="totallyTimeSpent" value="15443000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
