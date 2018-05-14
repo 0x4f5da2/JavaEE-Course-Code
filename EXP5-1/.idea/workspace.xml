@@ -7,33 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="917e260d-537d-41f0-953c-bc088b358af0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/.idea/modules/EXP6-1_main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/action/AddAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/action/LoadMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/action/LoginAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/action/RegisterAction-validation.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/action/RegisterAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/database/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/model/LyTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/model/NewComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/model/NewRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/util/CheckLoginState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/util/StringSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/resources/struts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/webapp/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/webapp/liuyan.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/webapp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/webapp/logout.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/webapp/main.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/webapp/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/webapp/session.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/webapp/success.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP6-1/src/main/webapp/t.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EXP6-1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EXP6-1/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EXP6-1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EXP6-1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/interceptor/MessageInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EXP6-1/src/main/java/com/chenzhicheng/course/javaee/exp6/interceptor/MessageInterceptor.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />

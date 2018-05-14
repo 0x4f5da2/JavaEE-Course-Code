@@ -6,6 +6,9 @@
 
 <struts>
     <package name="default" namespace="/" extends="struts-default">
+        <interceptors>
+            <interceptor name="messageInterceptor" class="com.chenzhicheng.course.javaee.exp6.interceptor.MessageInterceptor"/>
+        </interceptors>
         <action name="login" class="com.chenzhicheng.course.javaee.exp6.action.LoginAction">
             <result name="success" type="redirect">main.action</result>
             <result name="error">/error.jsp</result>
@@ -20,6 +23,9 @@
             <result name="success">/success.jsp</result>
             <result name="error">/error.jsp</result>
             <result name="login">/logout.jsp</result>
+            <!--DEFAULT_STACK_IS_IMPORTANT-->
+            <interceptor-ref name="defaultStack"/>
+            <interceptor-ref name="messageInterceptor"/>
         </action>
         <action name="register" class="com.chenzhicheng.course.javaee.exp6.action.RegisterAction">
             <result name="success">/login.jsp</result>

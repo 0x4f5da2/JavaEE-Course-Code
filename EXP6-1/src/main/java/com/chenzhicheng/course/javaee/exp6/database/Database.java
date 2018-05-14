@@ -10,12 +10,13 @@ public class Database {
     private Connection connection = null;
     private String url = "jdbc:mysql://localhost:3306/javaee_exp5_1?" +
             "user=root&password=12345678&useUnicode=true&characterEncoding=UTF8&useSSL=true";
-    public Database() throws Exception{
+
+    public Database() throws Exception {
         Class.forName("com.mysql.jdbc.Driver");
         connection = DriverManager.getConnection(url);
     }
 
-    public User verify(String username, String password){
+    public User verify(String username, String password) {
         boolean verfied = false;
         int permissionLevel = -1;
         int userID = -1;
@@ -31,10 +32,10 @@ public class Database {
                 verfied = true;
             }
             stmt.close();
-        } catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
-        if(verfied && userID != -1 && permissionLevel != -1){
+        if (verfied && userID != -1 && permissionLevel != -1) {
             return new User(userID, null, null, permissionLevel);
         } else {
             return null;
@@ -57,7 +58,7 @@ public class Database {
         return success;
     }
 
-    public boolean addUser(String username, String password, int permission){
+    public boolean addUser(String username, String password, int permission) {
         boolean success = false;
         String sql = "insert into usertable(username, password, permission) values(?, ?, ?)";
         try {
@@ -67,22 +68,22 @@ public class Database {
             stmt.setInt(3, permission);
             success = stmt.executeUpdate() != 0;
             stmt.close();
-        } catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return success;
     }
 
-    public ArrayList findLyInfo(User user){
+    public ArrayList findLyInfo(User user) {
         String sql = "SELECT * FROM javaee_exp5_1.lytable, javaee_exp5_1.usertable where lytable.userId = usertable.id";
-        if(user.getPermission() == 0){
+        if (user.getPermission() == 0) {
             sql += " and usertable.id = " + user.getId() + ";";
         }
-        try{
+        try {
             PreparedStatement stmt = connection.prepareStatement(sql);
-            ArrayList al=new ArrayList();
-            ResultSet rs=stmt.executeQuery();
-            while(rs.next()){
+            ArrayList al = new ArrayList();
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
                 al.add(
                         new LyTable(
                                 rs.getString("username"),
@@ -93,17 +94,36 @@ public class Database {
                 );
             }
             return al;
-        }catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             return null;
         }
     }
 
     public void close() {
-        try{
+        try {
             connection.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public boolean hasSameTitle(String title) {
+        String sql = "select count(*) as cnt from lytable where title=?;";
+        boolean result = true;
+        try{
+            PreparedStatement stmt = connection.prepareStatement(sql);
+            stmt.setString(1, title);
+            ResultSet resultSet = stmt.executeQuery();
+            if(resultSet.next()){
+                int cnt = resultSet.getInt("cnt");
+                if(cnt == 0){
+                    result = false;
+                }
+            }
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+        return result;
     }
 }
