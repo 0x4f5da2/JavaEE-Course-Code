@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet __external-system-id="GRADLE" type="web" name="Web Gradle : EXP7-1-1.0-SNAPSHOT.war">
+      <facet type="Struts2" name="Struts 2">
+        <configuration>
+          <fileset id="s2fileset" name="My Fileset " removed="false">
+            <file>file://$MODULE_DIR$/../../src/main/resources/struts.xml</file>
+            <file>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.struts/struts2-core/2.5.16/5cca5f452aee48b2f757aa558ede78e20906598b/struts2-core-2.5.16.jar!/struts-default.xml</file>
+          </fileset>
+          <propertiesKeys disabled="false" />
+        </configuration>
+      </facet>
+    </facet>
+  </component>
+</module>

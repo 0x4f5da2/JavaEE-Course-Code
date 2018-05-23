@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="default" namespace="/" extends="struts-default">
+        <interceptors>
+            <interceptor name="messageInterceptor" class="com.chenzhicheng.course.javaee.exp7_1.interceptor.MessageInterceptor"/>
+        </interceptors>
+        <action name="login" class="com.chenzhicheng.course.javaee.exp7_1.action.LoginAction">
+            <result name="success" type="redirect">main.action</result>
+            <result name="error">/error.jsp</result>
+            <result name="input" type="redirect">/register.jsp</result>
+        </action>
+        <action name="main" class="com.chenzhicheng.course.javaee.exp7_1.action.LoadMessage">
+            <result name="success">/main.jsp</result>
+            <result name="error">/error.jsp</result>
+            <result name="login">/logout.jsp</result>
+        </action>
+        <action name="add" class="com.chenzhicheng.course.javaee.exp7_1.action.AddAction">
+            <result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+            <result name="login">/logout.jsp</result>
+            <!--DEFAULT_STACK_IS_IMPORTANT-->
+            <interceptor-ref name="defaultStack"/>
+            <interceptor-ref name="messageInterceptor"/>
+        </action>
+        <action name="register" class="com.chenzhicheng.course.javaee.exp7_1.action.RegisterAction">
+            <result name="success">/login.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+    </package>
+</struts>
