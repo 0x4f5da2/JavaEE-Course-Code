@@ -7,13 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7eaea70a-f98e-4209-a88d-9ddea64b609d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../EXP7-1/src/main/resources/i18nRes_en_US.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-1/src/main/resources/i18nRes_zh_CN.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-1/src/main/resources/struts.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP7-2/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP7-2/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP7-2/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP7-2/.idea/libraries/Hibernate_5_2_16_5_2_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP7-2/.idea/libraries/javax_xml_bind_jaxb_api_2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP7-2/.idea/libraries/mysql_mysql_connector_java_5_1_46.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP7-2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP7-2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP7-2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP7-2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP7-2/EXP7-2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP7-2/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP7-2/src/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP7-2/src/javaee/hiberante/dao/BookEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP7-2/src/javaee/hiberante/dao/BooklistEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP7-2/src/javaee/hiberante/dao/BorrowEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP7-2/src/javaee/hiberante/dao/ManagerEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP7-2/src/javaee/hiberante/dao/ReaderEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP7-2/src/javaee/hiberante/dao/ReservationArrivedEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP7-2/src/javaee/hiberante/dao/ReservationEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EXP7-1/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../EXP7-1/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EXP7-1/src/main/webapp/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../EXP7-1/src/main/webapp/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EXP7-1/src/main/webapp/session.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../EXP7-1/src/main/webapp/session.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -147,7 +161,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -1296,7 +1310,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://\iphereK\/library</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">\password\</property>
+        <mapping class="javaee.hiberante.dao.BookEntity"/>
+        <mapping class="javaee.hiberante.dao.BooklistEntity"/>
+        <mapping class="javaee.hiberante.dao.BorrowEntity"/>
+        <mapping class="javaee.hiberante.dao.ManagerEntity"/>
+        <mapping class="javaee.hiberante.dao.ReaderEntity"/>
+        <mapping class="javaee.hiberante.dao.ReservationEntity"/>
+        <mapping class="javaee.hiberante.dao.ReservationArrivedEntity"/>
+
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
