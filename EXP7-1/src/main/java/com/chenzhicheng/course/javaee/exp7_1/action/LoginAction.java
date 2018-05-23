@@ -30,9 +30,9 @@ public class LoginAction extends ActionSupport implements SessionAware, ModelDri
      */
     @Override
     public String execute() throws Exception {
-        if(session.get(StringSupport.SESSION_USER_BEAN) != null){
+        if (session.get(StringSupport.SESSION_USER_BEAN) != null) {
             User tmp = (User) session.get(StringSupport.SESSION_USER_BEAN);
-            if(tmp.getUsername().equals(this.user.getUsername()) && tmp.getPassword().equals(this.user.getPassword())){
+            if (tmp.getUsername().equals(this.user.getUsername()) && tmp.getPassword().equals(this.user.getPassword())) {
                 return ActionSupport.SUCCESS;
             } else {
                 session.remove(StringSupport.SESSION_USER_BEAN);
@@ -40,7 +40,7 @@ public class LoginAction extends ActionSupport implements SessionAware, ModelDri
         }
         Database database = new Database();
         User userBean = database.verify(this.user.getUsername(), this.user.getPassword());
-        if(userBean == null){
+        if (userBean == null) {
             return ActionSupport.ERROR;
         } else {
             userBean.setUsername(this.user.getUsername());
@@ -79,7 +79,7 @@ public class LoginAction extends ActionSupport implements SessionAware, ModelDri
     public void validate() {
         if (this.user.getUsername() == null || "".equals(this.user.getUsername())) {
             this.addFieldError("username", "USERNAME IS EMPTY");
-        } else if(this.user.getPassword() == null || "".equals(this.user.getPassword())){
+        } else if (this.user.getPassword() == null || "".equals(this.user.getPassword())) {
             this.addFieldError("password", "PASSWORD IS EMPTY");
         }
     }

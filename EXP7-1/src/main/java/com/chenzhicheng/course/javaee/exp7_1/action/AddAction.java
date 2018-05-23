@@ -17,7 +17,6 @@ public class AddAction extends ActionSupport implements ModelDriven<NewComment>,
     private Map session;
 
 
-
     /**
      * A default implementation that does nothing an returns "success".
      *
@@ -34,16 +33,16 @@ public class AddAction extends ActionSupport implements ModelDriven<NewComment>,
      */
     @Override
     public String execute() throws Exception {
-        if(!CheckLoginState.check(session)){
+        if (!CheckLoginState.check(session)) {
             return ActionSupport.LOGIN;
         }
         boolean status = false;
         Database database = new Database();
         status = database.addComment(
-                Integer.toString(((User)session.get(StringSupport.SESSION_USER_BEAN)).getId()),
+                Integer.toString(((User) session.get(StringSupport.SESSION_USER_BEAN)).getId()),
                 comment.title, comment.content
         );
-        if(status){
+        if (status) {
             return ActionSupport.SUCCESS;
         } else {
             return ActionSupport.ERROR;

@@ -3,12 +3,12 @@ package com.chenzhicheng.course.javaee.exp7_1.model;
 import java.io.Serializable;
 
 public class User implements Serializable {
-	private int id;
-	private String username;
-	private String password;
-	private int permission;
+    private int id;
+    private String username;
+    private String password;
+    private int permission;
 
-	public User(){
+    public User() {
 
     }
 

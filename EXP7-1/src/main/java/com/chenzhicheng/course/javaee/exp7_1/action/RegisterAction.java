@@ -31,7 +31,7 @@ public class RegisterAction extends ActionSupport implements SessionAware {
         Database database = new Database();
         boolean status = database.addUser(username, password, 0);
         database.close();
-        if(status){
+        if (status) {
             return ActionSupport.SUCCESS;
         } else {
             return ActionSupport.ERROR;

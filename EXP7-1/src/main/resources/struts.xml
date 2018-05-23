@@ -7,7 +7,8 @@
 <struts>
     <package name="default" namespace="/" extends="struts-default">
         <interceptors>
-            <interceptor name="messageInterceptor" class="com.chenzhicheng.course.javaee.exp7_1.interceptor.MessageInterceptor"/>
+            <interceptor name="messageInterceptor"
+                         class="com.chenzhicheng.course.javaee.exp7_1.interceptor.MessageInterceptor"/>
         </interceptors>
         <action name="login" class="com.chenzhicheng.course.javaee.exp7_1.action.LoginAction">
             <result name="success" type="redirect">main.action</result>

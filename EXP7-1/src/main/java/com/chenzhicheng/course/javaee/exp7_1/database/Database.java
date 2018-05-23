@@ -111,17 +111,17 @@ public class Database {
     public boolean hasSameTitle(String title) {
         String sql = "select count(*) as cnt from lytable where title=?;";
         boolean result = true;
-        try{
+        try {
             PreparedStatement stmt = connection.prepareStatement(sql);
             stmt.setString(1, title);
             ResultSet resultSet = stmt.executeQuery();
-            if(resultSet.next()){
+            if (resultSet.next()) {
                 int cnt = resultSet.getInt("cnt");
-                if(cnt == 0){
+                if (cnt == 0) {
                     result = false;
                 }
             }
-        } catch(Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return result;

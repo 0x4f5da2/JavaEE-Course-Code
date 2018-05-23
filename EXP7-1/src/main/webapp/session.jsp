@@ -7,7 +7,7 @@
 --%>
 <%@ page import="com.chenzhicheng.course.javaee.exp6.util.StringSupport" %>
 <%
-    if(session.getAttribute(StringSupport.SESSION_USER_BEAN) == null){
+    if (session.getAttribute(StringSupport.SESSION_USER_BEAN) == null) {
         response.sendRedirect("logout.jsp");
         return;
     }

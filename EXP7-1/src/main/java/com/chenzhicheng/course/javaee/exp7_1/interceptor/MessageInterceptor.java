@@ -17,7 +17,7 @@ public class MessageInterceptor extends AbstractInterceptor {
         AddAction action = (AddAction) invocation.getAction();
         String title = action.getModel().getTitle();
         Database database = new Database();
-        if(database.hasSameTitle(title)) {
+        if (database.hasSameTitle(title)) {
             return Action.ERROR;
         } else {
             return invocation.invoke();

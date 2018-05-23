@@ -1,6 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="com.chenzhicheng.course.javaee.exp6.model.LyTable" %>
-<%@ page import="com.chenzhicheng.course.javaee.exp6.util.StringSupport" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.Iterator" %>
 <%@ include file="session.jsp" %>

@@ -30,11 +30,11 @@ public class LoadMessage extends ActionSupport implements SessionAware {
      */
     @Override
     public String execute() throws Exception {
-        if(!CheckLoginState.check(session)){
+        if (!CheckLoginState.check(session)) {
             return ActionSupport.LOGIN;
         }
         User user = (User) this.session.get(StringSupport.SESSION_USER_BEAN);
-        if(user == null) {
+        if (user == null) {
             return ActionSupport.LOGIN;
         }
         Database database = new Database();
