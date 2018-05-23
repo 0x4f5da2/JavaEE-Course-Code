@@ -5,7 +5,7 @@
   Time: 16:21
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page import="com.chenzhicheng.course.javaee.exp6.util.StringSupport" %>
+<%@ page import="com.chenzhicheng.course.javaee.exp7_1.util.StringSupport" %>
 <%
     if (session.getAttribute(StringSupport.SESSION_USER_BEAN) == null) {
         response.sendRedirect("logout.jsp");
