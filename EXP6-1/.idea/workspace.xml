@@ -7,27 +7,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7eaea70a-f98e-4209-a88d-9ddea64b609d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../EXP7-2/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-2/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-2/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-2/.idea/libraries/Hibernate_5_2_16_5_2_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-2/.idea/libraries/javax_xml_bind_jaxb_api_2_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-2/.idea/libraries/mysql_mysql_connector_java_5_1_46.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-2/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-2/EXP7-2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-2/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-2/src/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-2/src/javaee/hiberante/dao/BookEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-2/src/javaee/hiberante/dao/BooklistEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-2/src/javaee/hiberante/dao/BorrowEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-2/src/javaee/hiberante/dao/ManagerEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-2/src/javaee/hiberante/dao/ReaderEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-2/src/javaee/hiberante/dao/ReservationArrivedEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EXP7-2/src/javaee/hiberante/dao/ReservationEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/.idea/dataSources/07dec726-dc4e-4ad1-aa7d-6e3da1966d6b.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/java/com/chenzhicheng/course/javaee/exp8/action/AddAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/java/com/chenzhicheng/course/javaee/exp8/action/LoadMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/java/com/chenzhicheng/course/javaee/exp8/action/LoginAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/java/com/chenzhicheng/course/javaee/exp8/action/RegisterAction-validation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/java/com/chenzhicheng/course/javaee/exp8/action/RegisterAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/java/com/chenzhicheng/course/javaee/exp8/dao/LytableEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/java/com/chenzhicheng/course/javaee/exp8/dao/UsertableEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/java/com/chenzhicheng/course/javaee/exp8/interceptor/MessageInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/java/com/chenzhicheng/course/javaee/exp8/model/LyTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/java/com/chenzhicheng/course/javaee/exp8/model/NewComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/java/com/chenzhicheng/course/javaee/exp8/model/NewRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/java/com/chenzhicheng/course/javaee/exp8/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/java/com/chenzhicheng/course/javaee/exp8/util/CheckLoginState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/java/com/chenzhicheng/course/javaee/exp8/util/StringSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/resources/i18nRes_en_US.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/resources/i18nRes_zh_CN.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/resources/struts.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/resources/struts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/webapp/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/webapp/liuyan.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/webapp/logout.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/webapp/main.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/webapp/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/webapp/session.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/main/webapp/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EXP8-1/src/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXP7-1/.idea/modules/EXP7-1_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../EXP8-1/.idea/modules/exp8_main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EXP7-2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EXP7-2/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -149,12 +175,12 @@
       </file>
       <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
-          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
+            <state relative-caret-position="546">
               <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="50" />
             </state>
           </provider>
+          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
         </entry>
       </file>
       <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
@@ -609,7 +635,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -653,8 +678,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -891,6 +917,7 @@
       <workItem from="1526308026309" duration="3220000" />
       <workItem from="1526432481090" duration="346000" />
       <workItem from="1527056343320" duration="985000" />
+      <workItem from="1527137635876" duration="1205000" />
     </task>
     <task id="LOCAL-00001" summary="create exp6 proj">
       <created>1525938375733</created>
@@ -924,7 +951,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15024000" />
+    <option name="totallyTimeSpent" value="16229000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="1" />
@@ -947,10 +974,10 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33407325" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3369803" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.58752733" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Learn" order="2" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.21375267" />
@@ -958,12 +985,12 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49946696" weight="0.32824427" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1300,12 +1327,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
+        <state relative-caret-position="546">
           <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="50" />
         </state>
       </provider>
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">

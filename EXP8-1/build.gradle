@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group 'javaee.experiment'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.apache.struts/struts2-core
+    compile group: 'org.apache.struts', name: 'struts2-core', version: '2.5.16'
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.46'
+    // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.17.Final'
+    // https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina
+    compile group: 'org.apache.tomcat', name: 'tomcat-catalina', version: '8.5.29'
+}
