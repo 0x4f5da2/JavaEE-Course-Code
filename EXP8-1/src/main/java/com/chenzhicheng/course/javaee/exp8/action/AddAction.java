@@ -1,9 +1,10 @@
 package com.chenzhicheng.course.javaee.exp8.action;
 
-import com.chenzhicheng.course.javaee.exp8.database.Database;
-//todo dao
-import com.chenzhicheng.course.javaee.exp8.model.NewComment;
-import com.chenzhicheng.course.javaee.exp8.model.User;
+import com.chenzhicheng.course.javaee.exp8.dao.ListAndAddDao;
+import com.chenzhicheng.course.javaee.exp8.dao.impl.ListAndAddImpl;
+//todo pojo
+import com.chenzhicheng.course.javaee.exp8.old.model.NewComment;
+import com.chenzhicheng.course.javaee.exp8.pojo.UsertableEntity;
 import com.chenzhicheng.course.javaee.exp8.util.CheckLoginState;
 import com.chenzhicheng.course.javaee.exp8.util.StringSupport;
 import com.opensymphony.xwork2.Action;
@@ -37,13 +38,10 @@ public class AddAction extends ActionSupport implements ModelDriven<NewComment>,
         if (!CheckLoginState.check(session)) {
             return ActionSupport.LOGIN;
         }
-        boolean status = false;
-        Database database = new Database();
-        status = database.addComment(
-                Integer.toString(((User) session.get(StringSupport.SESSION_USER_BEAN)).getId()),
-                comment.title, comment.content
-        );
-        if (status) {
+        UsertableEntity entity = (UsertableEntity)session.get(StringSupport.SESSION_USER_BEAN);
+        ListAndAddDao dao = new ListAndAddImpl();
+        int stat = dao.add(comment, entity);
+        if(stat != -1){
             return ActionSupport.SUCCESS;
         } else {
             return ActionSupport.ERROR;

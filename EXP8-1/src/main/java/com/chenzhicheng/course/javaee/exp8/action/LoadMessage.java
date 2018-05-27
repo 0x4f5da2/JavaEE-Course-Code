@@ -1,15 +1,19 @@
 package com.chenzhicheng.course.javaee.exp8.action;
 
+import com.chenzhicheng.course.javaee.exp8.dao.ListAndAddDao;
+import com.chenzhicheng.course.javaee.exp8.dao.impl.ListAndAddImpl;
 import com.chenzhicheng.course.javaee.exp8.database.Database;
-//todo dao
-import com.chenzhicheng.course.javaee.exp8.model.User;
+//todo pojo
+import com.chenzhicheng.course.javaee.exp8.pojo.UsertableEntity;
 import com.chenzhicheng.course.javaee.exp8.util.CheckLoginState;
 import com.chenzhicheng.course.javaee.exp8.util.StringSupport;
 import com.opensymphony.xwork2.Action;
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.interceptor.SessionAware;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 public class LoadMessage extends ActionSupport implements SessionAware {
@@ -34,15 +38,20 @@ public class LoadMessage extends ActionSupport implements SessionAware {
         if (!CheckLoginState.check(session)) {
             return ActionSupport.LOGIN;
         }
-        User user = (User) this.session.get(StringSupport.SESSION_USER_BEAN);
-        if (user == null) {
-            return ActionSupport.LOGIN;
+        UsertableEntity entity = (UsertableEntity) this.session.get(StringSupport.SESSION_USER_BEAN);
+//        Database database = new Database();
+//        ArrayList al = database.findLyInfo(entity);
+//        this.session.put(StringSupport.SESSION_LY_LIST, al);
+//        database.close();
+        ListAndAddDao dao = new ListAndAddImpl();
+        List list = dao.getList(entity);
+        if(list!=null) {
+            Map request = (Map) ActionContext.getContext().get("request");
+            request.put(StringSupport.REQUEST_LY_LIST, list);
+            return ActionSupport.SUCCESS;
+        } else {
+            return ActionSupport.ERROR;
         }
-        Database database = new Database();
-        ArrayList al = database.findLyInfo(user);
-        this.session.put(StringSupport.SESSION_LY_LIST, al);
-        database.close();
-        return ActionSupport.SUCCESS;
     }
 
 

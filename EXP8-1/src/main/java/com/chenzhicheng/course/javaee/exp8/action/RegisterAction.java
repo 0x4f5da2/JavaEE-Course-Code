@@ -1,7 +1,9 @@
 package com.chenzhicheng.course.javaee.exp8.action;
 
+import com.chenzhicheng.course.javaee.exp8.dao.LoginAndRegisterDao;
+import com.chenzhicheng.course.javaee.exp8.dao.impl.LoginAndRegisterDaoImpl;
 import com.chenzhicheng.course.javaee.exp8.database.Database;
-//todo dao
+//todo pojo
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.interceptor.SessionAware;
@@ -29,10 +31,9 @@ public class RegisterAction extends ActionSupport implements SessionAware {
      */
     @Override
     public String execute() throws Exception {
-        Database database = new Database();
-        boolean status = database.addUser(username, password, 0);
-        database.close();
-        if (status) {
+        LoginAndRegisterDao dao = new LoginAndRegisterDaoImpl();
+        int id = dao.register(this.username, this.password);
+        if (id != -1) {
             return ActionSupport.SUCCESS;
         } else {
             return ActionSupport.ERROR;

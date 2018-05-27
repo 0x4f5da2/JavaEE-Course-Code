@@ -5,7 +5,7 @@
     <title>简易留言板</title>
 </head>
 <body bgcolor="#E3E3E3">
-<s:form action="register" method="POST">
+<s:form action="register" method="POST" namespace="/">
     <table>
         <caption>用户注册</caption>
         <tr>

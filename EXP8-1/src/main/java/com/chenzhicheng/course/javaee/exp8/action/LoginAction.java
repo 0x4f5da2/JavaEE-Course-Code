@@ -1,8 +1,10 @@
 package com.chenzhicheng.course.javaee.exp8.action;
 
-import com.chenzhicheng.course.javaee.exp8.database.Database;
-//todo dao
-import com.chenzhicheng.course.javaee.exp8.model.User;
+import com.chenzhicheng.course.javaee.exp8.dao.LoginAndRegisterDao;
+import com.chenzhicheng.course.javaee.exp8.dao.impl.LoginAndRegisterDaoImpl;
+//todo pojo
+import com.chenzhicheng.course.javaee.exp8.old.model.User;
+import com.chenzhicheng.course.javaee.exp8.pojo.UsertableEntity;
 import com.chenzhicheng.course.javaee.exp8.util.StringSupport;
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionSupport;
@@ -32,21 +34,19 @@ public class LoginAction extends ActionSupport implements SessionAware, ModelDri
     @Override
     public String execute() throws Exception {
         if (session.get(StringSupport.SESSION_USER_BEAN) != null) {
-            User tmp = (User) session.get(StringSupport.SESSION_USER_BEAN);
+            UsertableEntity tmp = (UsertableEntity) session.get(StringSupport.SESSION_USER_BEAN);
             if (tmp.getUsername().equals(this.user.getUsername()) && tmp.getPassword().equals(this.user.getPassword())) {
                 return ActionSupport.SUCCESS;
             } else {
                 session.remove(StringSupport.SESSION_USER_BEAN);
             }
         }
-        Database database = new Database();
-        User userBean = database.verify(this.user.getUsername(), this.user.getPassword());
-        if (userBean == null) {
+        LoginAndRegisterDao dao = new LoginAndRegisterDaoImpl();
+        UsertableEntity entity = dao.login(this.user.getUsername(), this.user.getPassword());
+        if (entity == null) {
             return ActionSupport.ERROR;
         } else {
-            userBean.setUsername(this.user.getUsername());
-            userBean.setPassword(this.user.getPassword());
-            session.put("user_bean", userBean);
+            session.put("user_bean", entity);
             return ActionSupport.SUCCESS;
         }
 
@@ -70,6 +70,14 @@ public class LoginAction extends ActionSupport implements SessionAware, ModelDri
     @Override
     public User getModel() {
         return this.user;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     /**

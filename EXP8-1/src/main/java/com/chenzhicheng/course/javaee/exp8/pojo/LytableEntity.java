@@ -1,20 +1,16 @@
-package com.chenzhicheng.course.javaee.exp8.dao;
+package com.chenzhicheng.course.javaee.exp8.pojo;
 
-import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.Objects;
 
-@Entity
-@Table(name = "lytable", schema = "javaee_exp5_1", catalog = "")
 public class LytableEntity {
     private int id;
-    private Integer userId;
+//    private Integer userId;
     private Timestamp date;
     private String title;
     private String content;
+    private UsertableEntity usertableByUserId;
 
-    @Id
-    @Column(name = "id")
     public int getId() {
         return id;
     }
@@ -23,18 +19,14 @@ public class LytableEntity {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "user_id")
-    public Integer getUserId() {
-        return userId;
-    }
+//    public Integer getUserId() {
+//        return userId;
+//    }
+//
+//    public void setUserId(Integer userId) {
+//        this.userId = userId;
+//    }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
-    }
-
-    @Basic
-    @Column(name = "date")
     public Timestamp getDate() {
         return date;
     }
@@ -43,8 +35,6 @@ public class LytableEntity {
         this.date = date;
     }
 
-    @Basic
-    @Column(name = "title")
     public String getTitle() {
         return title;
     }
@@ -53,8 +43,6 @@ public class LytableEntity {
         this.title = title;
     }
 
-    @Basic
-    @Column(name = "content")
     public String getContent() {
         return content;
     }
@@ -73,7 +61,7 @@ public class LytableEntity {
         }
         LytableEntity that = (LytableEntity) o;
         return id == that.id &&
-                Objects.equals(userId, that.userId) &&
+//                Objects.equals(userId, that.userId) &&
                 Objects.equals(date, that.date) &&
                 Objects.equals(title, that.title) &&
                 Objects.equals(content, that.content);
@@ -82,6 +70,14 @@ public class LytableEntity {
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, userId, date, title, content);
+        return Objects.hash(id, /*userId, */date, title, content);
+    }
+
+    public UsertableEntity getUsertableByUserId() {
+        return usertableByUserId;
+    }
+
+    public void setUsertableByUserId(UsertableEntity usertableByUserId) {
+        this.usertableByUserId = usertableByUserId;
     }
 }

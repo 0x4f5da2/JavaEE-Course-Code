@@ -5,18 +5,24 @@
     <title>简易留言板</title>
 </head>
 <body bgcolor="#E3E3E3">
-<form action="login.action" method="post">
+<s:form action="login" method="POST" namespace="/">
+
     <table>
         <caption>用户登录</caption>
         <tr>
-            <td><s:textfield name="username" key="username" size="20"/> </td>
+            <td rowspan="2"><s:textfield name="user.username" key="username" size="20"/> </td>
         </tr>
         <tr>
-            <td><s:textfield name="password" key="password" size="20"/> </td>
+            <td rowspan="2"><s:textfield name="user.password" key="password" size="20"/> </td>
+        </tr>
+        <tr>
+            <td><s:submit key="submit"/></td>
+            <td><s:submit key="reset" /></td>
         </tr>
     </table>
-    <s:submit key="submit"/><s:reset key="reset"/>
-</form>
-<s:a href="register.jsp" key="signup"/>
+
+</s:form>
+
+<s:a href="register.jsp"><s:text name="signup"/></s:a>
 </body>
 </html>

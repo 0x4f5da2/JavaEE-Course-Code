@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.chenzhicheng.course.javaee.exp8.pojo.UsertableEntity" table="usertable" schema="javaee_exp5_1">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+            <generator class="native"/>
+        </id>
+        <property name="username">
+            <column name="username" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="password">
+            <column name="password" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="permission">
+            <column name="permission" sql-type="int(11)"/>
+        </property>
+        <set name="lytablesById" inverse="true">
+            <key>
+                <column name="user_id"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.chenzhicheng.course.javaee.exp8.pojo.LytableEntity"/>
+        </set>
+    </class>
+</hibernate-mapping>

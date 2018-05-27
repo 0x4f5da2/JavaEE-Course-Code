@@ -1,8 +1,5 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="com.chenzhicheng.course.javaee.exp8.model.LyTable" %>
-<%@ page import="com.chenzhicheng.course.javaee.exp8.util.StringSupport" %>
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="java.util.Iterator" %>
 <%@ include file="session.jsp" %>
 <html>
 <head>
@@ -18,25 +15,34 @@
             <th>留言标题</th>
             <th>留言内容</th>
         </tr>
-        <%
-            ArrayList al = (ArrayList) session.getAttribute(StringSupport.SESSION_LY_LIST);
-            Iterator iter = al.iterator();
-            while (iter.hasNext()) {
-                LyTable ly = (LyTable) iter.next();
-        %>
-        <tr>
-            <td><%= ly.getUsername() %>
-            </td>
-            <td><%= ly.getDate() %>
-            </td>
-            <td><%= ly.getTitle() %>
-            </td>
-            <td><%= ly.getContent() %>
-            </td>
-        </tr>
-        <%
-            }
-        %>
+        <s:iterator var="each" value="#request.list">
+            <tr>
+                <td><s:property value="#each.usertableByUserId.username"/></td>
+                <td><s:property value="#each.date"/></td>
+                <td><s:property value="#each.title"/></td>
+                <td><s:property value="#each.content"/></td>
+            </tr>
+        </s:iterator>
+
+        <%--<%--%>
+        <%--ArrayList al = (ArrayList) session.getAttribute(StringSupport.SESSION_LY_LIST);--%>
+        <%--Iterator iter = al.iterator();--%>
+        <%--while (iter.hasNext()) {--%>
+        <%--LyTable ly = (LyTable) iter.next();--%>
+        <%--%>--%>
+        <%--<tr>--%>
+        <%--<td><%= ly.getUsername() %>--%>
+        <%--</td>--%>
+        <%--<td><%= ly.getDate() %>--%>
+        <%--</td>--%>
+        <%--<td><%= ly.getTitle() %>--%>
+        <%--</td>--%>
+        <%--<td><%= ly.getContent() %>--%>
+        <%--</td>--%>
+        <%--</tr>--%>
+        <%--<%--%>
+        <%--}--%>
+        <%--%>--%>
     </table>
     <input type="submit" value="留言"/>
 </form>

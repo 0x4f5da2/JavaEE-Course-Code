@@ -1,4 +1,4 @@
-package com.chenzhicheng.course.javaee.exp8.model;
+package com.chenzhicheng.course.javaee.exp8.old.model;
 
 import java.io.Serializable;
 
