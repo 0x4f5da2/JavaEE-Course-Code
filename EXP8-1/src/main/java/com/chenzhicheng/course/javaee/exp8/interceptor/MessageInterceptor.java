@@ -1,7 +1,7 @@
 package com.chenzhicheng.course.javaee.exp8.interceptor;
 
 import com.chenzhicheng.course.javaee.exp8.action.AddAction;
-import com.chenzhicheng.course.javaee.exp8.database.Database;
+import com.chenzhicheng.course.javaee.exp8.old.database.Database;
 //todo pojo
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionInvocation;

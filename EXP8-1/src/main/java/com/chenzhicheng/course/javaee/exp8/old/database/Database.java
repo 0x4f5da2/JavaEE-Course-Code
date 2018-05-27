@@ -1,4 +1,4 @@
-package com.chenzhicheng.course.javaee.exp8.database;
+package com.chenzhicheng.course.javaee.exp8.old.database;
 
 import com.chenzhicheng.course.javaee.exp8.old.model.LyTable;
 import com.chenzhicheng.course.javaee.exp8.old.model.User;

@@ -2,7 +2,6 @@ package com.chenzhicheng.course.javaee.exp8.action;
 
 import com.chenzhicheng.course.javaee.exp8.dao.LoginAndRegisterDao;
 import com.chenzhicheng.course.javaee.exp8.dao.impl.LoginAndRegisterDaoImpl;
-import com.chenzhicheng.course.javaee.exp8.database.Database;
 //todo pojo
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionSupport;

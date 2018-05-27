@@ -2,7 +2,6 @@ package com.chenzhicheng.course.javaee.exp8.action;
 
 import com.chenzhicheng.course.javaee.exp8.dao.ListAndAddDao;
 import com.chenzhicheng.course.javaee.exp8.dao.impl.ListAndAddImpl;
-import com.chenzhicheng.course.javaee.exp8.database.Database;
 //todo pojo
 import com.chenzhicheng.course.javaee.exp8.pojo.UsertableEntity;
 import com.chenzhicheng.course.javaee.exp8.util.CheckLoginState;
@@ -12,7 +11,6 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.interceptor.SessionAware;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
